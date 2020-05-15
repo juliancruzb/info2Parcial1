@@ -2,13 +2,21 @@
 #include <vector>
 #include <sstream>
 #include <tools.h>
+#include <cinema.h>
+#include <persona.h>
 
 using namespace std;
 
+
+
 int main()
 {
-    for (string celda : stringSplit("Abollonada $12000&100&Preferencial $15000&20&",'&')) {
-        cout << celda << " ; ";
+    /*
+     * TESTING
+     */
+
+    for (string celda : cargarRegistros("red1.txt")) {
+      cout << celda << " ; ";
     }
     cout << endl << "Fin del programa" << endl;
     return 0;

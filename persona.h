@@ -15,7 +15,7 @@ private:
     string clave;
     string rol;
 public:
-    string getUsuario();
+    string getID();
     void setUsuario(string u);
     string getNombre();
     void setNombre(string n);

@@ -1,10 +1,12 @@
 #include "persona.h"
 #include "tools.h"
 #include <sstream>
+#include <iostream>
+using namespace std;
 
 Persona::Persona()
 {
-
+    cout << "";
 }
 
 Persona::Persona(string registroBD){
@@ -20,7 +22,7 @@ Persona::Persona(string registroBD){
     }
 }
 
-string Persona::getUsuario(){
+string Persona::getID(){
     return usuario;
 }
 void Persona::setUsuario(string u){
