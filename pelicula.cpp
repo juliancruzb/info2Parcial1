@@ -1,11 +1,27 @@
 #include "pelicula.h"
-#include <string>
-using namespace std;
+#include <sstream>
+#include <vector>
+#include "tools.h"
 
+using namespace std;
 //Constructor por defecto
 Pelicula::Pelicula()
 {
 
+}
+//Constructor a partir de registro de base de datos
+Pelicula::Pelicula(string registroBD){
+    vector<string> infoPelicula = stringSplit(registroBD,'|');
+    string temp;
+    if (infoPelicula.size() != 5) {
+        throw "PEL01 - El registro de base de datos esta corrupto";
+    } else {
+        idPelicula = stoi(infoPelicula[0]);
+        nombre = infoPelicula[1];
+        genero = infoPelicula[2];
+        duracion = stoi(infoPelicula[3]);
+        clasif = infoPelicula[4];
+    }
 }
 // Función para obtener el id de la pelicula
 int Pelicula::getIdPelicula() {

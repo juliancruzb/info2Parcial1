@@ -1,9 +1,17 @@
 #include <iostream>
+#include <vector>
+#include <sstream>
+#include <tools.h>
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    for (string celda : stringSplit("Abollonada $12000&100&Preferencial $15000&20&",'&')) {
+        cout << celda << " ; ";
+    }
+    cout << endl << "Fin del programa" << endl;
     return 0;
 }
+
+

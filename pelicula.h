@@ -7,6 +7,7 @@ class Pelicula
 {
 public:
     Pelicula();
+    Pelicula(string registroBD);
 private:
     int idPelicula;
     string nombre;
