@@ -22,6 +22,18 @@ Persona::Persona(string registroBD){
     }
 }
 
+string Persona::getBDRecord() {
+    string record = "";
+    record.append(usuario);
+    record.append("|");
+    record.append(nombre);
+    record.append("|");
+    record.append(clave);
+    record.append("|");
+    record.append(rol);
+    record.append("|");
+    return record;
+}
 string Persona::getID(){
     return usuario;
 }
@@ -46,3 +58,5 @@ string Persona::getRol(){
 void Persona::setRol(string r){
     rol = r;
 }
+
+

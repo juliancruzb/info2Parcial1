@@ -72,7 +72,7 @@ map<string,int> Sala::getDistrib() {
 int Sala::getSillasLinea() {
     return sillasxLinea;
 }
-string Sala::getBDRegistro() {
+string Sala::getBDRecord() {
     //Variables locales
     string recordSala = "";
     string recordDistr = "";

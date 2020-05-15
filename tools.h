@@ -5,5 +5,5 @@ using namespace std;
 vector<string> stringSplit(const string& texto, char delimitador);
 string cifrarDescifrar(string txt);
 vector<string> cargarRegistros(string a);
-void escribirArchivo(vector <string>);
+void escribirArchivo(vector <string>, string file);
 #endif // TOOLS_H

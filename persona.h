@@ -23,6 +23,7 @@ public:
     void setClave(string c);
     string getRol();
     void setRol(string r);
+    string getBDRecord();
 };
 
 #endif // PERSONA_H

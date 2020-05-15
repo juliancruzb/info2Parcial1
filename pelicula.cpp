@@ -67,7 +67,7 @@ void Pelicula::setClasif(string cla) {
     clasif = cla;
 }
 // Funcion para obtener el registro en base de datos de la pelicula
-string Pelicula::getDBRecord() {
+string Pelicula::getBDRecord() {
     //Variables locales
     string recordPelicula = "";
     recordPelicula.append(to_string(idPelicula));

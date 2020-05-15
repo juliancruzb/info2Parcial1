@@ -41,9 +41,9 @@ vector<string> cargarRegistros(string archivo) {
 }
 
 //Funcion para escribir archivo
-void escribirArchivo(vector <string> info, string archivo) {
+void escribirArchivo(vector <string> info, string fileToWrite) {
     ofstream file;
-    file.open(archivo,ios::in);
+    file.open(fileToWrite,ios::in);
     if (file.is_open()) {
         for (string linea : info) {
             file << linea <<"\n";

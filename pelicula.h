@@ -25,7 +25,7 @@ public:
     void setDuracion(int dur);
     string getClasif();
     void setClasif(string cla);
-    string getDBRecord();
+    string getBDRecord();
 };
 
 #endif // PELICULA_H

@@ -11,14 +11,21 @@ using namespace std;
 
 int main()
 {
-    /*
-     * TESTING
-     */
-
-    for (string celda : cargarRegistros("red1.txt")) {
-      cout << celda << " ; ";
+    // Inicializa elementos
+    Cinema cine;
+    cine.cargarConfiguracion();
+    int option = -1; // Opción seleccionada
+    while (option < 0) {
+        system("CLS");
+        // Mostrar en pantalla menu de opciones
+        option = cine.msgLogin();
     }
-    cout << endl << "Fin del programa" << endl;
+    // Es usuario
+    if (option == 0) {
+        int optPeli = cine.optUsuario();
+        cine.mostrarPelicula(optPeli);
+    }
+
     return 0;
 }
 

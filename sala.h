@@ -24,7 +24,7 @@ public:
     void updateDistrib(string categoria, int capacidad);
     map<string,int> getDistrib();
     int getSillasLinea();
-    string getBDRegistro();
+    string getBDRecord();
 private:
     void setSillasLinea(int sxl);
 };
